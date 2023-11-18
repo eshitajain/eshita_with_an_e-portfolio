@@ -286,13 +286,15 @@ body {
 }
 
 .p4-img5 {
-    background-image: url(atvm.png);
+    background-image: url(atvm.jpg);
 }
 .p4-img6 {
     background-image: url(slate.png);
 }
-.p4-img a {
+.p4-img a:last-child {
+    height: 100%;
     opacity: 1;
+    background-color: white;
 }
 
 /* page 6 */
