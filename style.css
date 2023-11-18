@@ -1,0 +1,491 @@
+@font-face {
+    font-family: "Vanchrome Front";
+    src: url(VANCHROME\ FRONT.OTF);
+}
+
+@font-face {
+    font-family: "Shaloems Alt";
+    src: url(SHALOEMSALT.TTF);
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(montserrat/MONTSERRAT-REGULAR.TTF);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: "montserrat";
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    color: white;
+    background-color: black;
+    padding: 0 5%;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1 {
+    font-size: 1.5vmax;
+    color: rgb(255, 255, 255);
+}
+
+.nav-links > a {
+    /* font-weight: 400; */
+    font-size: 1.1vmax;
+    text-decoration: none;
+    margin-left: 1.5vmax;
+    color: rgb(222, 222, 222);
+    cursor: pointer;
+}
+
+.nav-links > a:hover {
+    color: white;
+}
+
+#page1 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-color: black;
+    color: rgb(59, 59, 59);
+    padding: 0 5%;
+}
+
+.up-arrow {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    opacity: 1;
+    text-decoration: none;
+    padding: 0.5vmax 0.8vmax;
+    background-color: #c87e40;
+    border-radius: 0.2vmax;
+    font-size: 1vmax;
+    color: white;
+}
+
+.p1-left,
+.p1-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.p1-left h1 {
+    letter-spacing: 0.2vmax;
+    font-family: "Vanchrome Front";
+    font-weight: lighter;
+    font-size: 6vmax;
+    color: white;
+    line-height: 6vmax;
+    position: relative;
+}
+
+.p1-left h1::after {
+    content: "*";
+    font-size: 3vmax;
+    position: absolute;
+    top: 40%;
+    left: 44%;
+    color: #c87e40;
+}
+
+.p1-left p {
+    margin-top: 1vmax;
+    font-size: 1vmax;
+    color: rgba(255, 255, 255, 0.624);
+    width: 65%;
+}
+
+.p1-links {
+    margin-bottom: 2vmax;
+}
+
+.p1-links a {
+    font-weight: 400;
+    color: #c87e40;
+    text-decoration: none;
+    margin-right: 3vmax;
+}
+
+.p1-right {
+    background-image: url(profile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* page1-5 */
+
+#page1-5 {
+    width: 100%;
+    height: max-content;
+    padding: 5% 15% 0 15%;
+    color: rgb(106, 106, 106);
+    margin-bottom: 2vmax;
+}
+
+#page1-5 span {
+    color: #222222;
+    font-family: "Shaloems Alt";
+    font-size: 8vmax;
+}
+
+.res-hire {
+    display: none;
+}
+
+.res-hire p {
+    color: rgba(255, 255, 255, 0.624);
+    margin-bottom: 1vmax;
+}
+
+.res-hire a {
+    margin-right: 1vmax;
+    text-decoration: none;
+    padding: 0.7vmax 1.5vmax;
+    background-color: #e9e9e9;
+    color: rgb(106, 106, 106);
+    border-radius: 0.2vmax;
+}
+.res-hire a:nth-child(2) {
+    background-color: #c87e40;
+    color: white;
+}
+
+/* page 3 */
+
+#page3 {
+    width: 100%;
+    padding: 0 15%;
+}
+
+.p3-title {
+    color: rgb(106, 106, 106);
+    margin-bottom: 1vmax;
+}
+
+#page3-center-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+#page3-center-bottom li {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 0.2vmax;
+    width: 24%;
+    margin-bottom: 1vmax;
+    /* border: 1px solid black; */
+    background-color: rgb(250, 250, 250);
+    box-shadow: 3px 3px 3px #fafafa;
+    list-style: none;
+    font-size: 1vmax;
+    padding: 1vmax;
+    color: rgb(106, 106, 106);
+}
+
+#page3-center-bottom li span {
+    font-weight: 900;
+    font-size: 1vmax;
+    color: #222;
+}
+#page3-center-bottom li p {
+    font-size: 0.8vmax;
+}
+
+/* pagr 4 */
+
+#page4 {
+    padding: 5% 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page4-heading h1 {
+    font-size: 3.5vmax;
+    color: #343434;
+    margin-bottom: 2.3vmax;
+}
+
+#page4-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+.page4-cards {
+    width: 30vmax;
+    height: 25vmax;
+    background: #55617d;
+    margin: 0.6vmax;
+    border-radius: 0.3vmax;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page4-cards a {
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+.page4-cards a:hover {
+    opacity: 1;
+}
+
+.page4-cards div p {
+    color: #aeaeae;
+}
+
+.p4-img1 {
+    background-image: url(Socialsphere.jpg);
+}
+.p4-img2 {
+    background-image: url(Messoheuristic.png);
+}
+
+.p4-img3 {
+    background-image: url(MessoUseabilityTesting.png);
+}
+
+.p4-img4 {
+    background-image: url(Gurukulika.jpg);
+}
+
+.p4-img5 {
+    background-image: url(atvm.png);
+}
+.p4-img6 {
+    background-image: url(slate.png);
+}
+.p4-img a {
+    opacity: 1;
+}
+
+/* page 6 */
+
+#page6-footer {
+    background-color: #222;
+    padding: 5% 17%;
+    width: 100%;
+}
+
+#page6-footer p {
+    margin: 1vmax 0;
+    color: white;
+}
+.p6-f1 {
+    width: 100%;
+    color: white;
+}
+.p6-f1 h1 {
+    font-family: "Vanchrome Front";
+    font-size: 3vmax;
+    font-weight: lighter;
+}
+.p6-ft-lb {
+    background-color: white;
+    border: none;
+    opacity: 0.3;
+    height: 1px;
+}
+
+.p6-f2 {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 3vmax;
+}
+
+.p6-f2 a {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vmax;
+    font-weight: 300;
+}
+
+.p6-f2 a i {
+    margin-right: 1vmax;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav h1 {
+        font-size: 2vmax;
+    }
+
+    .up-arrow {
+        font-size: 1.5vmax;
+        padding: 0.8vmax 1vmax;
+    }
+
+    #page1 {
+        display: block;
+        height: max-content;
+        position: relative;
+    }
+
+    .p1-left {
+        position: absolute;
+        bottom: 30%;
+        height: max-content;
+    }
+
+    .p1-right {
+        height: 85vh;
+        width: 100%;
+        background-size: contain;
+        background-position: top;
+    }
+
+    .p1-links {
+        display: none;
+    }
+
+    .p1-left h1 {
+        font-size: 7vmax;
+    }
+
+    .p1-left h1::after {
+        content: "";
+    }
+
+    .p1-left p {
+        font-size: 1.2vmax;
+        width: 100%;
+    }
+
+    /* page1-5   */
+
+    .res-hire {
+        margin-top: 5vmax;
+        width: 100%;
+        /* background-color: red; */
+        position: absolute;
+        display: initial;
+    }
+    .res-hire a {
+        padding: 1vmax 2vmax;
+        font-size: 1.2vmax;
+    }
+
+    #page1-5 p {
+        font-size: 1.5vmax;
+    }
+
+    /* page 3 */
+
+    .p3-title {
+        font-size: 2vmax;
+    }
+
+    #page3-center-bottom {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #page3-center-bottom li {
+        width: 49%;
+        height: 7vh;
+    }
+
+    /* page 4 */
+
+    #page4-heading h1 {
+        font-size: 5vmax;
+        color: #343434;
+        margin-bottom: 7vmax;
+    }
+
+    .page4-cards {
+        display: flex;
+        align-items: end;
+    }
+
+    .page4-cards a {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        opacity: 1;
+        height: 25%;
+    }
+
+    .page4-cards a h1 {
+        font-size: 1.5vmax;
+    }
+
+    .page4-cards a p {
+        font-size: 1.5vmax;
+    }
+
+    /* page 6 */
+    .p6-f1 h1 {
+        font-size: 5vmax;
+        line-height: 4.5vmax;
+    }
+    .p6-f1 p {
+        font-size: 1.5vmax;
+    }
+    #page6-footer p {
+        font-size: 1.5vmax;
+    }
+    .p6-f2 a {
+        width: max-content;
+        margin-right: 1vmax;
+    }
+    .p6-f2 {
+        font-size: 1.5vmax;
+        width: 100%;
+    }
+    .p6-f2 a i {
+        font-size: 1.5vmax;
+        margin-right: 0.5vmax;
+    }
+}
