@@ -234,11 +234,9 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
 }
 .page4-cards {
-    width: 30vmax;
+    width: 33vmax;
     height: 25vmax;
     background: #55617d;
     margin: 0.6vmax;
@@ -436,6 +434,10 @@ body {
     }
 
     /* page 4 */
+
+    #page4-card {
+        justify-content: center;
+    }
 
     #page4-heading h1 {
         font-size: 5vmax;
